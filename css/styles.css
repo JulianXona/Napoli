@@ -141,7 +141,7 @@ p {
   object-fit: cover;
   z-index: 0;
   pointer-events: none;
-  transform: scale(1.06);   /* evita bordes blancos del blur */
+  transform: scale(1.12);   /* evita bordes blancos del blur (más margen para 16:9) */
   filter: blur(28px) brightness(0.45) saturate(0.8);
   will-change: transform;
 }
