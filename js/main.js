@@ -121,47 +121,55 @@
   }
 
   /* --------------------------------------------------------
-     4. VIDEOS — loop continuo + fondo blur + ocultar placeholder.
-     Por cada sección se crea un clon del video que actúa como
-     fondo borroso (object-fit: cover + filter: blur), mientras el
-     video original muestra el encuadre completo (object-fit: contain).
+     4. MEDIA — fondo blur + ocultar placeholder.
+     Funciona con <img> y con <video>.
+     Por cada sección se crea un clon del media que actúa como
+     fondo borroso (object-fit: cover + filter: blur).
      -------------------------------------------------------- */
   sections.forEach((section) => {
-    const video = section.querySelector('.section__video');
-    if (!video) return;
+    const media = section.querySelector('.section__video');
+    if (!media) return;
+
+    const isVideo = media.tagName === 'VIDEO';
 
     // --- Clon de fondo borroso ---
-    const bgVideo = video.cloneNode(true);
-    bgVideo.className = 'section__video-bg';
-    bgVideo.setAttribute('aria-hidden', 'true');
-    bgVideo.removeAttribute('poster');
-    section.insertBefore(bgVideo, video);
+    const bgMedia = media.cloneNode(true);
+    bgMedia.className = 'section__video-bg';
+    bgMedia.setAttribute('aria-hidden', 'true');
+    if (isVideo) bgMedia.removeAttribute('poster');
+    section.insertBefore(bgMedia, media);
 
-    // --- Marcar sección con video real (oculta el placeholder) ---
+    // --- Marcar sección con media real (oculta el placeholder) ---
     function markLoaded() {
       section.classList.add('has-video');
     }
 
-    if (video.readyState >= 2) {
-      markLoaded();
-    } else {
-      video.addEventListener('loadeddata', markLoaded, { once: true });
-    }
-
-    // --- Reproducción garantizada para ambos elementos ---
-    function tryPlay(v) {
-      const p = v.play();
-      if (p && typeof p.catch === 'function') {
-        p.catch(() => { /* autoplay bloqueado: muted+playsinline lo evita */ });
-      }
-    }
-
-    [video, bgVideo].forEach((v) => {
-      if (v.readyState >= 2) {
-        tryPlay(v);
+    if (isVideo) {
+      if (media.readyState >= 2) {
+        markLoaded();
       } else {
-        v.addEventListener('canplay', () => tryPlay(v), { once: true });
+        media.addEventListener('loadeddata', markLoaded, { once: true });
       }
-    });
+
+      function tryPlay(v) {
+        const p = v.play();
+        if (p && typeof p.catch === 'function') {
+          p.catch(() => {});
+        }
+      }
+
+      [media, bgMedia].forEach((v) => {
+        if (v.readyState >= 2) tryPlay(v);
+        else v.addEventListener('canplay', () => tryPlay(v), { once: true });
+      });
+
+    } else {
+      // <img>: marcar como cargada cuando el src esté listo
+      if (media.complete) {
+        markLoaded();
+      } else {
+        media.addEventListener('load', markLoaded, { once: true });
+      }
+    }
   });
 })();
