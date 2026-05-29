@@ -22,7 +22,7 @@
     btn.className = 'index__item';
     btn.type = 'button';
     btn.setAttribute('aria-label', 'Ir a ' + label);
-    btn.innerHTML = '<span class="index__label">' + label + '</span><span class="index__num">' + num + '</span>';
+    btn.innerHTML = '<span class="index__label">' + label + '</span><span class="index__dot"></span>';
     btn.addEventListener('click', function () {
       sec.scrollIntoView({ behavior: reduce ? 'auto' : 'smooth', block: 'start' });
     });
@@ -59,15 +59,22 @@
     }, { threshold: 0, rootMargin: '0px 0px -2% 0px' });
     reveals.forEach(function (el) { revObs.observe(el); });
 
-    // Primer pase inmediato: revela lo que ya está en pantalla al cargar
-    // (no espera al primer callback async del observer).
-    requestAnimationFrame(function () {
+    // Primer pase: revela lo que ya está en pantalla, sin esperar al
+    // callback async del observer. Se corre varias veces para cubrir
+    // restauración de scroll, carga de fuentes y layout tardío.
+    function firstPass() {
       var vh = window.innerHeight;
       reveals.forEach(function (el) {
+        if (el.classList.contains('is-in')) return;
         var r = el.getBoundingClientRect();
-        if (r.top < vh && r.bottom > 0) el.classList.add('is-in');
+        if (r.top < vh * 0.98 && r.bottom > 0) el.classList.add('is-in');
       });
-    });
+    }
+    firstPass();
+    requestAnimationFrame(firstPass);
+    setTimeout(firstPass, 120);
+    window.addEventListener('load', firstPass);
+    if (document.fonts && document.fonts.ready) { document.fonts.ready.then(firstPass); }
   }
 
   /* ---------- PARALLAX + ZOOM lento ---------- */
@@ -116,7 +123,20 @@
     window.addEventListener('scroll', onScroll, { passive: true });
     window.addEventListener('resize', onScroll, { passive: true });
     update();
-  } else if (progressBar) {
+  }
+
+  /* ---------- VIDEOS: play/pause según visibilidad ---------- */
+  var videos = Array.prototype.slice.call(document.querySelectorAll('video.media__img'));
+  if (videos.length > 0 && 'IntersectionObserver' in window) {
+    var vidObs = new IntersectionObserver(function (entries) {
+      entries.forEach(function (e) {
+        if (e.isIntersecting) { e.target.play(); } else { e.target.pause(); }
+      });
+    }, { threshold: 0.1 });
+    videos.forEach(function (v) { vidObs.observe(v); });
+  }
+
+  if (progressBar && reduce) {
     // sin parallax, mantener barra de progreso
     window.addEventListener('scroll', function () {
       var doc = document.documentElement;
