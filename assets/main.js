@@ -145,4 +145,46 @@
       progressBar.style.transform = 'scaleX(' + p + ')';
     }, { passive: true });
   }
+
+  /* ---------- I18N — toggle ES / IT ---------- */
+  var i18nCache = {};
+  var currentLang = 'es';
+  var langBtn = document.getElementById('lang-toggle');
+
+  function cacheSpanish() {
+    document.querySelectorAll('[data-i18n]').forEach(function (el) {
+      i18nCache[el.getAttribute('data-i18n')] = el.innerHTML;
+    });
+    items.forEach(function (btn, i) {
+      var span = btn.querySelector('.index__label');
+      if (span) i18nCache['nav.' + i] = span.textContent;
+    });
+  }
+
+  function setLang(lang) {
+    var t = (lang === 'it' && window.TRANSLATIONS) ? window.TRANSLATIONS.it : null;
+    document.querySelectorAll('[data-i18n]').forEach(function (el) {
+      var key = el.getAttribute('data-i18n');
+      var val = t ? (t[key] !== undefined ? t[key] : i18nCache[key]) : i18nCache[key];
+      if (val !== undefined) el.innerHTML = val;
+    });
+    items.forEach(function (btn, i) {
+      var span = btn.querySelector('.index__label');
+      if (!span) return;
+      var val = t ? (t['nav.' + i] || i18nCache['nav.' + i]) : i18nCache['nav.' + i];
+      if (val !== undefined) span.textContent = val;
+    });
+    document.documentElement.lang = lang === 'it' ? 'it' : 'es';
+    currentLang = lang;
+    if (langBtn) langBtn.textContent = lang === 'it' ? 'ES' : 'IT';
+  }
+
+  cacheSpanish();
+
+  if (langBtn) {
+    langBtn.addEventListener('click', function () {
+      setLang(currentLang === 'es' ? 'it' : 'es');
+    });
+  }
+
 })();
