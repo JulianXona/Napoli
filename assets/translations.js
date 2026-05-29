@@ -13,7 +13,7 @@ window.TRANSLATIONS = {
     'nav.4':  'Cosa ha viaggiato',
     'nav.5':  'La domanda',
     'nav.6':  'I · Documentario',
-    'nav.7':  'Cinque voci',
+    'nav.7':  'Le voci',
     'nav.8':  'Pizzaiolo',
     'nav.9':  'La nipote',
     'nav.10': 'Il tifoso',
@@ -103,14 +103,14 @@ window.TRANSLATIONS = {
 
     /* ---- Acto I ---- */
     'act1.num':   'Verticale I — Documentario',
-    'act1.title': "Cinque voci,<br /><em>un'unica</em> radice.",
+    'act1.title': "Molte voci,<br /><em>un'unica</em> radice.",
     'act1.sub':   'Il documentario entra nei 2.500 anni dalla porta di servizio: la tavola, la ricetta, il pallone, la lettera bagnata. La storia ufficiale, fuori.',
 
     /* ---- Sección 07 · Cinco voces ---- */
     's07.kicker': 'N.º 06 — Il documentario',
-    's07.title':  'Cinque storie per raccontare la diaspora',
-    's07.lede':   "Cinque ritratti. Un'unica storia.",
-    's07.text':   'Ognuno custodisce una tavola della stessa nave. Le prossime cinque schermate sono i cinque protagonisti, uno per uno.',
+    's07.title':  'Le storie minime della diaspora',
+    's07.lede':   "Molti ritratti. Un'unica storia.",
+    's07.text':   'Ognuno custodisce una tavola della stessa nave. Le prossime schermate sono i protagonisti, uno per uno.',
 
     /* ---- Sección 08 · Pizzaiolo ---- */
     's08.cap':   '01 · Documentario',
