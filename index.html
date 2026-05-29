@@ -4,11 +4,11 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Humanidad Compartida · Napoli 2500 + 100 Anni di Azzurro</title>
-  <meta name="description" content="Una sola obra en tres actos. Napoli, New York, Buenos Aires. Pitch interactivo — Xona." />
+  <meta name="description" content="Una sola obra en cuatro verticales. Napoli, New York, Buenos Aires. Pitch interactivo — Xona." />
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400;0,6..96,500;0,6..96,600;0,6..96,700;1,6..96,400;1,6..96,500;1,6..96,600&family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=IBM+Plex+Mono:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400;1,6..72,500;1,6..72,600&family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=IBM+Plex+Mono:wght@300;400;500&display=swap" rel="stylesheet" />
 
   <link rel="stylesheet" href="assets/styles.css" />
 </head>
@@ -18,18 +18,51 @@
 
   <header class="topbar">
     <div class="topbar__brand"><b>XONA</b><span>Buenos Aires</span></div>
-    <div class="topbar__meta">Napoli · MMDXXV</div>
+    <div class="topbar__meta">Napoli · MMXXVI</div>
   </header>
 
   <nav class="index" id="index" aria-label="Índice de capítulos"></nav>
 
   <main>
 
-    <!-- ===================== 01 · PRÓLOGO ===================== -->
-    <section class="section hero" data-chapter data-label="Prólogo" data-parallax data-screen-label="01 Prólogo">
+    <!-- ===================== 01 · EL PROYECTO (framework) ===================== -->
+    <section class="section section--paper framework" data-chapter data-label="Proyecto" data-screen-label="01 El proyecto">
+      <div class="media framework__bg">
+        <img class="media__img" src="images/framework-bg.jpg" alt="" aria-hidden="true" />
+      </div>
+      <div class="framework__inner">
+        <p class="kicker reveal">Xona Buenos Aires · Propuesta</p>
+        <h2 class="framework__title reveal" data-d="1">Una sola obra.<br />Cuatro verticales.</h2>
+        <div class="framework__grid reveal" data-d="2">
+          <div class="framework__item">
+            <span class="framework__n">I</span>
+            <h3>Documental</h3>
+            <p>Largometraje y episodios por personaje. Postulable a festivales. Archivo vivo de la diáspora.</p>
+          </div>
+          <div class="framework__item">
+            <span class="framework__n">II</span>
+            <h3>Instalación</h3>
+            <p>La pared de cartas. Física, creciente, itinerante. De La Boca al Museo de la Inmigración.</p>
+          </div>
+          <div class="framework__item">
+            <span class="framework__n">III</span>
+            <h3>Evento</h3>
+            <p>Tres días en La Boca. Una noche en Nueva York. Protocolar, cultural y popular en simultáneo.</p>
+          </div>
+          <div class="framework__item">
+            <span class="framework__n">IV</span>
+            <h3>Distribución</h3>
+            <p>Plataformas, medios propios, partnerships internacionales. Ecosistema de contenidos para 2026–2027.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== 02 · PRÓLOGO (hero) ===================== -->
+    <section class="section hero" data-chapter data-label="Prólogo" data-parallax data-screen-label="02 Prólogo">
       <div class="hero__sticky">
         <div class="media">
-          <img class="media__img" src="images/section-01.jpg" alt="Vista aérea del Golfo de Nápoles con el Vesubio al atardecer" />
+          <video class="media__img" src="videos/section-01.mp4" autoplay muted loop playsinline poster="images/section-01.jpg"></video>
         </div>
         <div class="scrim scrim--bottom"></div>
 
@@ -48,11 +81,11 @@
       </div>
     </section>
 
-    <!-- ===================== 02 · EL HALLAZGO ===================== -->
-    <section class="section bleed" data-chapter data-label="El hallazgo" data-parallax data-screen-label="02 El hallazgo">
+    <!-- ===================== 03 · EL HALLAZGO ===================== -->
+    <section class="section bleed" data-chapter data-label="Hallazgo" data-parallax data-screen-label="03 El hallazgo">
       <div class="bleed__sticky">
         <div class="media">
-          <img class="media__img" src="images/section-02.jpg" alt="Buzos descendiendo hacia un cofre en el fondo del mar" />
+          <video class="media__img" src="videos/section-02.mp4" autoplay muted loop playsinline poster="images/section-02.jpg"></video>
         </div>
         <div class="scrim scrim--bottom"></div>
 
@@ -60,17 +93,17 @@
           <p class="kicker reveal">N.º 02 — Verano de 2026</p>
           <h2 class="display bleed__title reveal" data-d="1">El hallazgo</h2>
           <div class="copy reveal" data-d="2">
-            <p>Tres chicos buceando en el Golfo encuentran los restos de un barco hundido.</p>
+            <p class="lede">Tres chicos buceando en el Golfo encuentran los restos de un barco hundido.</p>
             <p>Adentro, miles de cartas. <em>Ninguna llegó nunca a destino.</em></p>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- ===================== 03 · LAS CARTAS (citas) ===================== -->
-    <section class="section quotes" data-chapter data-label="Las cartas" data-parallax data-screen-label="03 Las cartas">
+    <!-- ===================== 04 · LAS CARTAS ===================== -->
+    <section class="section quotes" data-chapter data-label="Las cartas" data-parallax data-screen-label="04 Las cartas">
       <div class="media">
-        <img class="media__img" src="images/section-03.jpg" alt="Cartas manuscritas antiguas iluminadas por una vela" />
+        <video class="media__img" src="videos/section-03.mp4" autoplay muted loop playsinline poster="images/section-03.jpg"></video>
       </div>
       <div class="scrim scrim--full"></div>
 
@@ -79,7 +112,7 @@
           <p class="kicker">N.º 03 — Cartas del fondo del mar</p>
         </div>
         <div class="quotes__list">
-          <blockquote class="quote reveal" lang="it">«Amore mio, l'ulivo è sopravvissuto al viaggio. L'ho piantato qui.»<cite>Carta I — sin destinatario</cite></blockquote>
+          <blockquote class="quote reveal" lang="it">«Amore mio, l'ulivo è sopravvissuto al viaggio. L'ho piantato qui.»<cite>Carta I</cite></blockquote>
           <blockquote class="quote reveal" data-d="1" lang="it">«Carlota, Francesca e Romana non ce l'hanno fatta.»<cite>Carta II</cite></blockquote>
           <blockquote class="quote reveal" data-d="2" lang="it">«Ti mando 724 lire e tutto quello che avevo da mangiare.»<cite>Carta III</cite></blockquote>
           <blockquote class="quote reveal" data-d="3" lang="it">«Ho portato il pallone. I bambini qui giocano come noi.»<cite>Carta IV</cite></blockquote>
@@ -87,13 +120,12 @@
       </div>
     </section>
 
-    <!-- ===================== 04 · LO QUE VIAJÓ ===================== -->
-    <section class="section split split--right" data-chapter data-label="Lo que viajó" data-parallax data-screen-label="04 Lo que viajó">
+    <!-- ===================== 05 · LO QUE CRUZÓ (papel) ===================== -->
+    <section class="section section--paper split split--right" data-chapter data-label="Lo que viajó" data-parallax data-screen-label="05 Lo que cruzó el océano">
       <div class="split__media">
         <figure class="split__figure">
           <div class="media"><img class="media__img" src="images/section-04.jpg" alt="Mesa napolitana con pizza, pelota de cuero y cancionero" /></div>
-          <div class="scrim scrim--side"></div>
-          <figcaption class="split__cap caption">La mesa que cruzó el océano</figcaption>
+          <figcaption class="split__cap caption" style="color:var(--paper)">La mesa que cruzó el océano</figcaption>
         </figure>
       </div>
       <div class="split__panel">
@@ -110,44 +142,146 @@
       </div>
     </section>
 
-    <!-- ===================== 05 · LA PREGUNTA (Teseo) ===================== -->
-    <section class="section type" data-chapter data-label="La pregunta" data-screen-label="05 La pregunta">
+    <!-- ===================== 06 · LA PREGUNTA (Teseo + mapa) ===================== -->
+    <section class="section type type--media" data-chapter data-label="La pregunta" data-parallax data-screen-label="06 La pregunta">
+      <div class="media">
+        <img class="media__img" src="images/section-05.jpg" alt="Mapa antiguo del Atlántico con un barco entre Nápoles, Nueva York y Buenos Aires" />
+      </div>
+      <div class="scrim scrim--full"></div>
       <div class="type__inner">
         <p class="kicker reveal">N.º 05 — El barco de Teseo</p>
         <h2 class="display type__title reveal" data-d="1">Cuando un barco navega tanto que se le reemplazan todas las tablas, <em>¿sigue siendo el mismo barco?</em></h2>
-        <div class="copy reveal" data-d="2" style="max-width:52ch;margin-top:clamp(2rem,5vh,3.2rem);font-size:var(--lead-size);line-height:1.4">
+        <div class="copy reveal" data-d="2" style="max-width:54ch;margin-top:clamp(2rem,5vh,3.2rem);font-size:var(--lead-size);line-height:1.4">
           <p style="color:var(--paper)">Napoli viajó. Sus tablas hoy están en Brooklyn, en La Paternal, en Palermo, en Belgrano. Cada descendiente, una tabla nueva del mismo barco.</p>
         </div>
       </div>
     </section>
 
-    <!-- ===================== 06 · CINCO VOCES ===================== -->
-    <section class="section program" data-chapter data-label="Cinco voces" data-parallax data-screen-label="06 Cinco voces">
-      <div class="program__wrap">
-        <div class="program__banner reveal">
-          <div class="media"><img class="media__img" src="images/section-06.jpg" alt="Retratos de cinco protagonistas del documental" /></div>
-          <div class="scrim scrim--bottom"></div>
-          <div class="bn-text"><p class="caption">Cinco retratos · una sola historia</p></div>
-        </div>
-        <div class="program__head">
-          <div>
-            <p class="kicker reveal">N.º 06 — El documental</p>
-            <h2 class="display program__title reveal" data-d="1">Cinco historias para abrir 2.500 años por dentro</h2>
-          </div>
-          <p class="program__intro reveal" data-d="2">Se cuenta desde la mesa. Desde la receta. Desde la pelota. Desde la carta mojada.</p>
-        </div>
-        <dl class="deflist reveal" data-d="2">
-          <div><dt>01 · El pizzaiolo</dt><dd>AVPN, abrió local en Palermo y guarda la receta de la nonna <b>escrita en napolitano.</b></dd></div>
-          <div><dt>02 · La nieta</dt><dd>Nunca pisó Nápoles y prepara <b>la misma salsa</b> todos los domingos.</dd></div>
-          <div><dt>03 · El tifoso</dt><dd>De La Paternal. Llora con el scudetto del 87 con el mismo nudo que con el gol a Inglaterra.</dd></div>
-          <div><dt>04 · El testigo</dt><dd>Conoció a Diego en los ochenta y todavía guarda <b>la servilleta firmada.</b></dd></div>
-          <div><dt>05 · El heredero</dt><dd>Abre, frente a cámara, un cofre familiar de cartas reales que nunca había abierto.</dd></div>
-        </dl>
+    <!-- ===================== ACTO I · DOCUMENTAL ===================== -->
+    <section class="section section--paper act" data-chapter data-label="I · Documental" data-screen-label="Acto I · Documental">
+      <div class="act__inner">
+        <p class="act__num reveal">Vertical I — Documental</p>
+        <h2 class="act__title reveal" data-d="1">Cinco voces,<br /><em>una sola</em> raíz.</h2>
+        <p class="act__sub reveal" data-d="2">El documental entra a 2.500 años por la puerta de atrás: la mesa, la receta, la pelota, la carta mojada. La historia oficial, afuera.</p>
       </div>
     </section>
 
-    <!-- ===================== 07 · LA PARED ===================== -->
-    <section class="section split" data-chapter data-label="La pared" data-parallax data-screen-label="07 La pared">
+    <!-- ===================== 07 · CINCO VOCES — intro ===================== -->
+    <section class="section bleed" data-chapter data-label="Cinco voces" data-parallax data-screen-label="07 Cinco voces — intro">
+      <div class="bleed__sticky">
+        <div class="media">
+          <img class="media__img" src="images/section-06.jpg" alt="Retratos de cinco protagonistas del documental" />
+        </div>
+        <div class="scrim scrim--bottom"></div>
+        <div class="bleed__inner">
+          <p class="kicker reveal">N.º 06 — El documental</p>
+          <h2 class="display bleed__title reveal" data-d="1">Cinco historias para contar la diáspora</h2>
+          <div class="copy reveal" data-d="2">
+            <p class="lede">Cinco retratos. Una sola historia.</p>
+            <p>Cada uno guarda una tabla del mismo barco. Las próximas cinco pantallas son los cinco protagonistas, uno por uno.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== 08 · El pizzaiolo ===================== -->
+    <section class="section story" data-chapter data-label="Pizzaiolo" data-parallax data-screen-label="08 El pizzaiolo">
+      <div class="story__media">
+        <div class="media"><video class="media__img" src="videos/pz.mp4" autoplay muted loop playsinline poster="images/pz.jpg"></video></div>
+        <div class="scrim scrim--bottom"></div>
+        <p class="story__cap caption">01 · Documental</p>
+      </div>
+      <div class="story__panel">
+        <p class="story__index reveal">01</p>
+        <h3 class="story__role reveal" data-d="1">El pizzaiolo</h3>
+        <p class="story__text reveal" data-d="2">Abrió local en Palermo. Guarda la receta de la nonna escrita en napolitano.</p>
+        <p class="story__text--sm reveal" data-d="3">La leyó por primera vez frente a cámara. No entendía cada palabra, pero sabía exactamente qué decía.</p>
+      </div>
+    </section>
+
+    <!-- ===================== 09 · La nieta ===================== -->
+    <section class="section story story--flip" data-chapter data-label="La nieta" data-parallax data-screen-label="09 La nieta">
+      <div class="story__media">
+        <div class="media"><video class="media__img" src="videos/nieta.mp4" autoplay muted loop playsinline poster="images/nieta.jpg"></video></div>
+        <div class="scrim scrim--bottom"></div>
+        <p class="story__cap caption">02 · Documental</p>
+      </div>
+      <div class="story__panel">
+        <p class="story__index reveal">02</p>
+        <h3 class="story__role reveal" data-d="1">La nieta</h3>
+        <p class="story__text reveal" data-d="2">Nunca pisó Nápoles. Prepara <b>la misma salsa</b> todos los domingos desde que tiene memoria.</p>
+        <p class="story__text--sm reveal" data-d="3">No sabe de dónde salió la receta. No la heredó escrita: la heredó del gesto.</p>
+      </div>
+    </section>
+
+    <!-- ===================== 10 · El tifoso ===================== -->
+    <section class="section story" data-chapter data-label="El tifoso" data-parallax data-screen-label="10 El tifoso">
+      <div class="story__media">
+        <div class="media"><video class="media__img" src="videos/tifoso.mp4" autoplay muted loop playsinline poster="images/tifoso.jpg"></video></div>
+        <div class="scrim scrim--bottom"></div>
+        <p class="story__cap caption">03 · Documental</p>
+      </div>
+      <div class="story__panel">
+        <p class="story__index reveal">03</p>
+        <h3 class="story__role reveal" data-d="1">El tifoso</h3>
+        <p class="story__text reveal" data-d="2">Llora con el scudetto del 87 con el mismo nudo en la garganta que con el gol a Inglaterra.</p>
+        <p class="story__text--sm reveal" data-d="3">Nunca entendió por qué. <em>El documental se lo explica.</em></p>
+      </div>
+    </section>
+
+    <!-- ===================== 11 · El testigo ===================== -->
+    <section class="section story story--flip" data-chapter data-label="El testigo" data-parallax data-screen-label="11 El testigo">
+      <div class="story__media">
+        <div class="media"><video class="media__img" src="videos/testigo.mp4" autoplay muted loop playsinline poster="images/testigo.jpg"></video></div>
+        <div class="scrim scrim--bottom"></div>
+        <p class="story__cap caption">04 · Documental</p>
+      </div>
+      <div class="story__panel">
+        <p class="story__index reveal">04</p>
+        <h3 class="story__role reveal" data-d="1">El testigo</h3>
+        <p class="story__text reveal" data-d="2">Conoció a Diego en los ochenta, en el vestuario del San Paolo.</p>
+        <p class="story__text--sm reveal" data-d="3">Todavía guarda <b>la servilleta firmada</b> en una caja con otras cartas que tampoco abrió nunca.</p>
+      </div>
+    </section>
+
+    <!-- ===================== 12 · El heredero ===================== -->
+    <section class="section story" data-chapter data-label="El heredero" data-parallax data-screen-label="12 El heredero">
+      <div class="story__media">
+        <div class="media"><video class="media__img" src="videos/heredero.mp4" autoplay muted loop playsinline poster="images/heredero.jpg"></video></div>
+        <div class="scrim scrim--bottom"></div>
+        <p class="story__cap caption">05 · Documental</p>
+      </div>
+      <div class="story__panel">
+        <p class="story__index reveal">05</p>
+        <h3 class="story__role reveal" data-d="1">El heredero</h3>
+        <p class="story__text reveal" data-d="2">Abre, frente a cámara, un cofre familiar. Adentro: cartas reales del 1910.</p>
+        <p class="story__text--sm reveal" data-d="3">Nunca las había abierto. <em>No sabe italiano.</em></p>
+      </div>
+    </section>
+
+    <!-- ===================== 13 · EL LENGUAJE VISUAL (papel) ===================== -->
+    <section class="section section--paper statement" data-chapter data-label="Lenguaje" data-screen-label="13 El lenguaje visual">
+      <div class="statement__inner">
+        <p class="kicker reveal">N.º 07 — El lenguaje visual</p>
+        <p class="statement__lead reveal" data-d="1"><em>Cine.</em> El tono de Sorrentino. La intimidad de <em>El Postino.</em></p>
+        <div class="copy reveal" data-d="2" style="max-width:62ch">
+          <p>La cámara está cerca. La voz en off narra mientras atrás corren frames de películas italianas, archivos de los ochenta, Sofía Loren en el Golfo. Las referencias son <em style="font-style:italic;color:var(--paper)">El Postino</em>, Sorrentino, <em style="font-style:italic;color:var(--paper)">El oro de Nápoles</em>.</p>
+          <p>Historias pequeñas, formato <em style="font-style:italic;color:var(--paper)">Relatos Salvajes</em>. Cada una completa en sí misma. Fotografía de festival, sonido directo, crudo con time-code.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== ACTO II · INSTALACIÓN ===================== -->
+    <section class="section section--paper act" data-chapter data-label="II · Instalación" data-screen-label="Acto II · Instalación">
+      <div class="act__inner">
+        <p class="act__num reveal">Vertical II — Instalación</p>
+        <h2 class="act__title reveal" data-d="1">La pared<br />que <em>sigue</em> creciendo.</h2>
+        <p class="act__sub reveal" data-d="2">Una obra física que no termina con el evento. Cartas colgadas, sonido de puerto, voces en italiano roto. El público escribe y la pared crece en tiempo real.</p>
+      </div>
+    </section>
+
+    <!-- ===================== 14 · LA PARED ===================== -->
+    <section class="section split" data-chapter data-label="La pared" data-parallax data-screen-label="14 La pared">
       <div class="split__media">
         <figure class="split__figure">
           <div class="media"><img class="media__img" src="images/section-07.jpg" alt="Instalación de cartas colgadas en una pared de museo" /></div>
@@ -155,18 +289,56 @@
         </figure>
       </div>
       <div class="split__panel">
-        <p class="split__num reveal">N.º 07</p>
+        <p class="split__num reveal">N.º 08</p>
         <h2 class="display split__title reveal" data-d="1">La pared</h2>
         <div class="copy reveal" data-d="2">
-          <p class="lede">Una instalación que sigue creciendo después.</p>
-          <p>Durante el evento, el público cuelga una carta dirigida a un familiar que cruzó el océano hace cincuenta, ochenta, ciento veinte años. La pared crece en tiempo real.</p>
-          <p>Cuando el evento termina, viaja al Museo de la Inmigración. <em>Sigue creciendo ahí.</em></p>
+          <p class="lede">La misma pared, en tres ciudades.</p>
+          <p>En La Boca, en Little Italy, en el muro del consulado. Cartas colgadas. Sonido de puerto. Voces superpuestas en italiano roto, en cocoliche, en español aprendido arriba del barco.</p>
         </div>
       </div>
     </section>
 
-    <!-- ===================== 08 · EL EVENTO ===================== -->
-    <section class="section program" data-chapter data-label="El evento" data-parallax data-screen-label="08 El evento">
+    <!-- ===================== 15 · EL PÚBLICO ESCRIBE (papel) ===================== -->
+    <section class="section section--paper statement" data-chapter data-label="Escribir" data-screen-label="15 El público escribe">
+      <div class="statement__inner">
+        <p class="kicker reveal">N.º 08 — Cómo funciona</p>
+        <p class="statement__lead reveal" data-d="1">Durante el evento, <em>el público escribe.</em></p>
+        <div class="copy reveal" data-d="2" style="max-width:62ch">
+          <p>Una carta dirigida a alguien que cruzó el océano hace cincuenta, ochenta, ciento veinte años. A alguien que mandó algo que no llegó. Se cuelga al lado de las cartas del fondo del mar. La pared crece en tiempo real, noche a noche.</p>
+          <p>Cuando el evento termina, la instalación viaja al Museo de la Inmigración. <em style="font-style:italic;color:var(--paper)">Y sigue creciendo ahí.</em></p>
+        </div>
+        <p class="reveal" data-d="3" style="margin-top:clamp(2rem,5vh,3rem);font-family:var(--font-display);font-style:italic;font-size:clamp(1.6rem,3vw,2.6rem);color:var(--paper);max-width:24ch">"¿Recibiste algo de tu bisabuelo?"</p>
+      </div>
+    </section>
+
+    <!-- ===================== 16 · LAS POSTALES (papel) ===================== -->
+    <section class="section section--paper split" data-chapter data-label="Postales" data-screen-label="16 Las postales">
+      <div class="split__media">
+        <figure class="split__figure">
+          <div class="media"><img class="media__img" src="images/postales.jpg" alt="Set de postales letterpress con cartas transcriptas en italiano" /></div>
+        </figure>
+      </div>
+      <div class="split__panel">
+        <p class="split__num reveal">N.º 08b</p>
+        <h2 class="display split__title reveal" data-d="1">El objeto<br />que queda</h2>
+        <div class="copy reveal" data-d="2">
+          <p>Cada carta se transcribe y se convierte en postal. Papel de archivo. Letterpress.</p>
+          <p>El bundle queda en el consulado, se vende en los aeropuertos, se dona al Museo. <em>Lo que no llegó en 1900 se convierte en objeto de 2026.</em></p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== ACTO III · EVENTO ===================== -->
+    <section class="section section--paper act" data-chapter data-label="III · Evento" data-screen-label="Acto III · Evento">
+      <div class="act__inner">
+        <p class="act__num reveal">Vertical III — Evento</p>
+        <h2 class="act__title reveal" data-d="1">Tres días.<br />Tres audiencias.<br /><em>Un</em> fin de semana.</h2>
+        <p class="act__sub reveal" data-d="2">Un fin de semana sobre el Riachuelo, anclado en el archivo real de Gardel grabando <em>Cuore napulitano</em>. Y, en paralelo, una noche en Nueva York.</p>
+      </div>
+    </section>
+
+    <!-- ===================== 17 · EL EVENTO — portada ===================== -->
+    <section class="section program" data-chapter data-label="Evento" data-parallax data-screen-label="17 El evento — portada">
       <div class="program__wrap">
         <div class="program__banner reveal">
           <div class="media"><img class="media__img" src="images/section-08.jpg" alt="La Boca al atardecer sobre el Riachuelo" /></div>
@@ -175,21 +347,85 @@
         </div>
         <div class="program__head">
           <div>
-            <p class="kicker reveal">N.º 08 — El evento</p>
-            <h2 class="display program__title reveal" data-d="1">Tres días, tres audiencias, tres olas de prensa</h2>
+            <p class="kicker reveal">N.º 09 — El evento</p>
+            <h2 class="display program__title reveal" data-d="1">El triángulo de La Boca como set natural</h2>
           </div>
-          <p class="program__intro reveal" data-d="2">Un fin de semana sobre el Riachuelo, anclado en el archivo real de Gardel grabando <em>Cuore napulitano.</em></p>
+          <p class="program__intro reveal" data-d="2">La Fábrica del Colón en un extremo, el Puente Transbordador sobre el río, Caminito atrás de la cancha. El Museo Maradona, ese día, de entrada libre.</p>
         </div>
-        <div class="blocks blocks--3">
-          <div class="block reveal"><p class="block__tag"><span class="i">Vie</span> Institucional</p><h3 class="block__title">Cocktail en el Consulado</h3><p>Avant-première del cameo AI de Maradona. Prensa, autoridades, corresponsales italianos.</p></div>
-          <div class="block reveal" data-d="1"><p class="block__tag"><span class="i">Sáb</span> La gran noche</p><h3 class="block__title">Sobre el Riachuelo</h3><p>Proyección del corto. Concierto que cruza tango y canción napolitana. Las diez camisetas históricas, de Sallustro a Maradona al tricolor 2023. Pizzaiolo AVPN, productos DOP.</p></div>
-          <div class="block reveal" data-d="2"><p class="block__tag"><span class="i">Dom</span> Al aire libre</p><h3 class="block__title">Entrada libre</h3><p>Mate, pizza, familias enteras, abuelos con sus nietos.</p></div>
+        <div class="copy reveal" data-d="2" style="max-width:70ch">
+          <p>Tres venues. Tres audiencias. Un solo fin de semana. Cada día sube una ola distinta de prensa: el viernes la protocolar, el sábado la cultural, el domingo la popular. Las próximas tres pantallas son los tres días, uno por uno.</p>
         </div>
       </div>
     </section>
 
-    <!-- ===================== 09 · MARADONA ===================== -->
-    <section class="section bleed" data-chapter data-label="Maradona" data-parallax data-screen-label="09 Maradona">
+    <!-- ===================== 18 · VIERNES ===================== -->
+    <section class="section bleed" data-chapter data-label="Viernes" data-parallax data-screen-label="18 Viernes · Fábrica del Colón">
+      <div class="bleed__sticky">
+        <div class="media">
+          <img class="media__img" src="images/fabrica.jpg" alt="Fábrica del Colón — galpón con escenografías originales, cocktail de apertura" />
+        </div>
+        <div class="scrim scrim--bottom"></div>
+        <div class="bleed__inner">
+          <p class="kicker reveal">Viernes — Protocolar</p>
+          <h2 class="display bleed__title reveal" data-d="1">Fábrica del Colón</h2>
+          <div class="copy reveal" data-d="2">
+            <p class="lede">Un espacio que ya es obra de arte antes de que llegue nadie.</p>
+            <p>Galpón enorme con escenografías originales del Teatro Colón. Cocktail de apertura: Consulado, autoridades, corresponsales italianos, prensa especializada. Avant-première del cameo AI de Maradona. 200 personas, por invitación.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== 19 · SÁBADO ===================== -->
+    <section class="section bleed" data-chapter data-label="Sábado" data-parallax data-screen-label="19 Sábado · Puente Transbordador">
+      <div class="bleed__sticky">
+        <div class="media">
+          <img class="media__img" src="images/puente.jpg" alt="Puente Transbordador de noche, concierto y proyección sobre el Riachuelo" />
+        </div>
+        <div class="scrim scrim--bottom"></div>
+        <div class="bleed__inner">
+          <p class="kicker reveal">Sábado — La gran noche</p>
+          <h2 class="display bleed__title reveal" data-d="1">Puente Transbordador</h2>
+          <div class="copy reveal" data-d="2">
+            <p class="lede">La noche más importante del fin de semana.</p>
+            <p>Proyección del corto sobre el Riachuelo. Concierto en vivo: tango y canción napolitana en el mismo setlist. Las diez camisetas históricas, de Sallustro a Maradona al tricolor 2023. Pizzaiolo AVPN en vivo, productos DOP. La Fundación Proa como partner cultural.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== 20 · DOMINGO ===================== -->
+    <section class="section bleed" data-chapter data-label="Domingo" data-parallax data-screen-label="20 Domingo · Caminito">
+      <div class="bleed__sticky">
+        <div class="media">
+          <img class="media__img" src="images/caminito.jpg" alt="Caminito domingo — familias, pared de cartas, Bombonera de fondo" />
+        </div>
+        <div class="scrim scrim--bottom"></div>
+        <div class="bleed__inner">
+          <p class="kicker reveal">Domingo — Al aire libre</p>
+          <h2 class="display bleed__title reveal" data-d="1">Caminito</h2>
+          <div class="copy reveal" data-d="2">
+            <p class="lede">Entrada libre. El barrio entero como venue.</p>
+            <p>Mate, pizza, familias enteras, abuelos con nietos. La pared de cartas crece en el pasaje más napolitano de Buenos Aires, con la cancha de Boca de fondo. El Museo Maradona abre gratis ese día como parte del programa.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== 21 · ANCLAJE HISTÓRICO (papel) ===================== -->
+    <section class="section section--paper statement" data-chapter data-label="Anclaje" data-screen-label="21 El anclaje histórico">
+      <div class="statement__inner">
+        <p class="kicker reveal">N.º 09 — El anclaje histórico</p>
+        <p class="statement__lead reveal" data-d="1">El archivo real lo hace <em>irreproducible.</em> Este evento solo puede pasar acá.</p>
+        <div class="copy reveal" data-d="2" style="max-width:62ch">
+          <p>El evento tiene un archivo real para apoyarse: Gardel grabando <em style="font-style:italic;color:var(--paper)">Cuore napulitano</em> en 1933. La Boca italiana de Quinquela Martín. El cocoliche como lengua del Riachuelo.</p>
+          <p>Buenos Aires y Nápoles comparten algo que ninguna otra ciudad puede reclamar: el mismo barco bajó en los dos puertos.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== 22 · MARADONA ===================== -->
+    <section class="section bleed" data-chapter data-label="Maradona" data-parallax data-screen-label="22 Maradona">
       <div class="bleed__sticky">
         <div class="media">
           <img class="media__img" src="images/section-09.jpg" alt="Mural de Maradona con la camiseta del Napoli" />
@@ -197,10 +433,10 @@
         <div class="scrim scrim--bottom"></div>
 
         <div class="bleed__inner">
-          <p class="kicker reveal">N.º 09</p>
+          <p class="kicker reveal">N.º 10</p>
           <h2 class="display bleed__title reveal" data-d="1">Diego está en todas partes</h2>
           <div class="copy reveal" data-d="2" style="max-width:none">
-            <div class="deflist" style="border-top-color:rgba(239,234,223,0.2)">
+            <div class="deflist" style="border-top-color:rgba(239,234,223,0.24)">
               <div><dt>La Bombonera</dt><dd>Homenaje en la previa de un partido de Boca.</dd></div>
               <div><dt>Argentinos Jrs.</dt><dd>El estadio lleva su nombre. Donde debutó en 1976.</dd></div>
               <div><dt>La Plata</dt><dd>Estadio Diego Armando Maradona, si octubre cae fecha FIFA.</dd></div>
@@ -212,27 +448,75 @@
       </div>
     </section>
 
-    <!-- ===================== 10 · NUEVA YORK ===================== -->
-    <section class="section split split--right" data-chapter data-label="Nueva York" data-parallax data-screen-label="10 Nueva York">
-      <div class="split__media">
-        <figure class="split__figure">
+    <!-- ===================== 23 · CAPÍTULO AMERICANO — portada ===================== -->
+    <section class="section program" data-chapter data-label="América" data-parallax data-screen-label="23 Capítulo Americano — portada">
+      <div class="program__wrap">
+        <div class="program__banner reveal">
           <div class="media"><img class="media__img" src="images/section-10.jpg" alt="Little Italy, Manhattan, al anochecer bajo banderas italianas" /></div>
-          <figcaption class="split__cap caption">Little Italy · Manhattan</figcaption>
-        </figure>
-      </div>
-      <div class="split__panel">
-        <p class="split__num reveal">N.º 10 — Extensión</p>
-        <h2 class="display split__title reveal" data-d="1">Nueva York</h2>
-        <div class="copy reveal" data-d="2">
-          <p>El documental es uno solo. La pared se replica. La narrativa funciona en las dos ciudades.</p>
-          <p>Una sola dirección creativa para América. Un productor ejecutivo bilingüe coordinando las dos noches. Continuidad visual entre Little Italy y La Boca.</p>
-          <p class="lede" style="margin-top:0.4em">Capítulo standalone:<br /><em>Neápolis — Capítulo Americano.</em></p>
+          <div class="scrim scrim--bottom"></div>
+          <div class="bn-text"><p class="caption">Little Italy · Ellis Island · Brooklyn</p></div>
+        </div>
+        <div class="program__head">
+          <div>
+            <p class="kicker reveal">N.º 11 — Capítulo Americano</p>
+            <h2 class="display program__title reveal" data-d="1">Neápolis llegó a dos puertos</h2>
+          </div>
+          <p class="program__intro reveal" data-d="2">La misma diáspora que bajó en el Puerto de Buenos Aires también desembarcó en Ellis Island. El mismo capítulo, contado desde el otro extremo de la carta hundida.</p>
+        </div>
+        <div class="copy reveal" data-d="2" style="max-width:70ch">
+          <p>Brooklyn concentra la tercera generación napolitana más grande del mundo fuera de Italia. La misma noche, en dos ciudades del mismo continente, se leen en voz alta las cartas que no llegaron en 1900. Las próximas tres pantallas son los tres lugares de Nueva York.</p>
         </div>
       </div>
     </section>
 
-    <!-- ===================== 11 · LA TESIS (azzurro) ===================== -->
-    <section class="section azzurro" data-chapter data-label="La tesis" data-screen-label="11 La tesis">
+    <!-- ===================== 24 · Little Italy ===================== -->
+    <section class="section story" data-chapter data-label="Little Italy" data-parallax data-screen-label="24 Little Italy · Mulberry St">
+      <div class="story__media">
+        <div class="media"><img class="media__img" src="images/mulberry.jpg" alt="Mulberry Street cerrada de noche, pared de cartas, banderas italianas" /></div>
+        <div class="scrim scrim--bottom"></div>
+        <p class="story__cap caption">01 · Nueva York</p>
+      </div>
+      <div class="story__panel">
+        <p class="story__index reveal">01</p>
+        <h3 class="story__role reveal" data-d="1">Mulberry Street</h3>
+        <p class="story__text reveal" data-d="2">La calle más napolitana de Manhattan. La calle se cierra, la pared se instala.</p>
+        <p class="story__text--sm reveal" data-d="3">La misma noche que La Boca. El mismo idioma roto. El mismo plato. <em>Dos ciudades, un solo reloj.</em></p>
+      </div>
+    </section>
+
+    <!-- ===================== 25 · Los dos puertos ===================== -->
+    <section class="section story story--flip" data-chapter data-label="Dos puertos" data-parallax data-screen-label="25 Los dos puertos">
+      <div class="story__media">
+        <div class="media"><img class="media__img" src="images/puertos.jpg" alt="Díptico: Ellis Island NY y Hotel de Inmigrantes BA como espejo" /></div>
+        <div class="scrim scrim--bottom"></div>
+        <p class="story__cap caption">02 · Nueva York</p>
+      </div>
+      <div class="story__panel">
+        <p class="story__index reveal">02</p>
+        <h3 class="story__role reveal" data-d="1">Los dos puertos</h3>
+        <p class="story__text reveal" data-d="2">Proyección del documental en ambas orillas. La historia es la misma.</p>
+        <p class="story__text--sm reveal" data-d="3">Alguien que se fue, algo que quedó, algo que llegó igual. Ellis Island como espejo exacto del Hotel de Inmigrantes de La Boca.</p>
+      </div>
+    </section>
+
+    <!-- ===================== 26 · La instalación permanente ===================== -->
+    <section class="section story" data-chapter data-label="La pared NY" data-parallax data-screen-label="26 La instalación permanente">
+      <div class="story__media">
+        <div class="media"><img class="media__img" src="images/instalacion-ny.jpg" alt="Instalación permanente en museo NY — pared de cartas escultórica" /></div>
+        <div class="scrim scrim--bottom"></div>
+        <p class="story__cap caption">03 · Nueva York</p>
+      </div>
+      <div class="story__panel">
+        <p class="story__index reveal">03</p>
+        <h3 class="story__role reveal" data-d="1">La instalación<br />permanente</h3>
+        <p class="story__text reveal" data-d="2">La pared de cartas en el museo. Más sobria, más escultórica.</p>
+        <p class="story__text--sm reveal" data-d="3">Queda después del evento y sigue creciendo en la ciudad — igual que en Buenos Aires, igual que en Nápoles. <em>Tres puntos en el mapa, una sola historia.</em></p>
+      </div>
+    </section>
+
+    <!-- ===================== 27 · LA TESIS (azzurro) ===================== -->
+    <section class="section azzurro" data-chapter data-label="La tesis" data-parallax data-screen-label="27 La tesis">
+      <div class="media"><img class="media__img" src="images/section-11.jpg" alt="Tríptico de Nápoles, Nueva York y La Boca al anochecer" /></div>
       <div class="azzurro__inner">
         <p class="kicker kicker--plain reveal">Una sola obra en tres actos</p>
         <h2 class="azzurro__title reveal" data-d="1">Napoli regresa. Por primera vez, <em>a la misma hora en tres continentes.</em></h2>
@@ -245,8 +529,48 @@
       </div>
     </section>
 
-    <!-- ===================== 12 · EL ALCANCE ===================== -->
-    <section class="section program" data-chapter data-label="El alcance" data-parallax data-screen-label="12 El alcance">
+    <!-- ===================== ACTO IV · DISTRIBUCIÓN ===================== -->
+    <section class="section section--paper act" data-chapter data-label="IV · Distribución" data-screen-label="Acto IV · Distribución">
+      <div class="act__inner">
+        <p class="act__num reveal">Vertical IV — Distribución</p>
+        <h2 class="act__title reveal" data-d="1">El evento termina.<br /><em>El contenido no.</em></h2>
+        <p class="act__sub reveal" data-d="2">Un sistema de contenidos diseñado para vivir entre 2026 y 2027: spin-offs, postales, archivo vivo y una campaña que arranca antes que el evento.</p>
+      </div>
+    </section>
+
+    <!-- ===================== 28 · SISTEMA DE CONTENIDOS — overview (papel) ===================== -->
+    <section class="section section--paper statement" data-chapter data-label="Contenidos" data-screen-label="28 El sistema de contenidos">
+      <div class="statement__inner">
+        <p class="kicker reveal">N.º 12 — El sistema de contenidos</p>
+        <p class="statement__lead reveal" data-d="1">Una obra, <em>muchos canales.</em></p>
+        <div class="copy reveal" data-d="2" style="max-width:64ch">
+          <p>El documental es la fuente. De él salen episodios por personaje, un podcast visual, postales de colección y un archivo donable. Cada formato encuentra su propia audiencia y su propio ritmo de publicación.</p>
+          <p>La campaña abre tres meses antes del evento, para que la diáspora ya esté contando su historia cuando empiece la nuestra. La próxima pantalla abre los cuatro pilares.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== 29 · SISTEMA — pilares (papel) ===================== -->
+    <section class="section section--paper program" data-chapter data-label="Pilares" data-screen-label="29 El sistema — pilares">
+      <div class="program__wrap">
+        <div class="program__head">
+          <div>
+            <p class="kicker reveal">N.º 12b — Los cuatro pilares</p>
+            <h2 class="display program__title reveal" data-d="1">Lo que se publica después</h2>
+          </div>
+          <p class="program__intro reveal" data-d="2">Cada pilar tiene su formato, su canal y su calendario propio. Todos alimentan el archivo vivo.</p>
+        </div>
+        <dl class="deflist reveal" data-d="2">
+          <div><dt>UGC</dt><dd><b>Mostrame tu Nápoles</b> — campaña abierta tres meses antes del evento. TikTok, Instagram, YouTube Shorts. La diáspora cuenta su propia historia antes de que empiece la nuestra.</dd></div>
+          <div><dt>Spin-offs</dt><dd>Un episodio por personaje: el pizzaiolo, la nieta, el tifoso, el testigo, el heredero. Podcast visual de 10–15 min. Distribución propia + plataformas. Evergreen para 2027.</dd></div>
+          <div><dt>Las postales</dt><dd>Las cartas de la instalación, transcriptas y convertidas en postales de colección. Se venden en aeropuertos, quedan en consulados, se donan al Museo. Objeto físico con vida útil de años.</dd></div>
+          <div><dt>Archivo vivo</dt><dd>Todo el material fílmico de la diáspora, digitalizado y donado al Museo de la Inmigración. Fuente pública para investigadores, familias y medios. <em>La obra que más dura.</em></dd></div>
+        </dl>
+      </div>
+    </section>
+
+    <!-- ===================== 30 · EL ALCANCE ===================== -->
+    <section class="section program" data-chapter data-label="El alcance" data-parallax data-screen-label="30 El alcance">
       <div class="program__wrap">
         <div class="program__banner reveal">
           <div class="media"><img class="media__img" src="images/section-12.jpg" alt="Cámara de cine, storyboard y guion sobre una mesa de madera" /></div>
@@ -255,31 +579,41 @@
         </div>
         <div class="program__head">
           <div>
-            <p class="kicker reveal">N.º 12 — El alcance</p>
+            <p class="kicker reveal">N.º 13 — El alcance</p>
             <h2 class="display program__title reveal" data-d="1">El alcance, en tres líneas</h2>
           </div>
         </div>
         <div class="blocks blocks--3">
-          <div class="block reveal"><p class="block__tag">Video</p><p>Scouting de 15-20 candidatos, shortlist de 12. Rodaje en Sony FX9 o Alexa Mini, sonido directo. B-roll en La Boca, San Telmo, Caminito, Bombonera, murales de Ron, Hotel de Inmigrantes. Crudo con log time-coded y transcripciones IT / ES / EN.</p></div>
-          <div class="block reveal" data-d="1"><p class="block__tag">Evento</p><p>Producción integral del fin de semana cultural. Gestión Consulado, Asociación Napoletani BA, partner deportivo en cuatro frentes.</p></div>
-          <div class="block reveal" data-d="2"><p class="block__tag">PR</p><p>Press kit trilingüe, mapa de medios completo, corresponsales italianos, influencers ítalo-argentinos, comunicados en cuatro olas.</p></div>
+          <div class="block reveal"><p class="block__tag">Documental</p><p>Scouting de 15–20 candidatos, shortlist de 12 personajes. Rodaje en Sony FX9 o Alexa Mini, sonido directo. B-roll en La Boca, San Telmo, Caminito, la Bombonera, murales de Martín Ron, Hotel de Inmigrantes. Crudo con log time-coded, transcripciones IT / ES / EN.</p></div>
+          <div class="block reveal" data-d="1"><p class="block__tag">Evento + Instalación</p><p>Producción integral del fin de semana en La Boca (tres venues, tres audiencias). Gestión Consulado, Asociación Napoletani BA, Fábrica del Colón, Fundación Proa, Museo Maradona. Partner deportivo en cuatro frentes. Instalación física de la pared. Producción de postales de archivo.</p></div>
+          <div class="block reveal" data-d="2"><p class="block__tag">PR + Distribución</p><p>Press kit trilingüe (IT/ES/EN), mapa de medios completo, corresponsales italianos en BA, influencers ítalo-argentinos. Cuatro olas de comunicados. Campaña UGC tres meses antes. Coordinación con el capítulo Nueva York en paralelo.</p></div>
         </div>
+      </div>
+    </section>
 
-        <p class="kicker reveal" style="margin-top:clamp(3rem,7vh,5rem)">Lo que sumamos</p>
-        <dl class="deflist reveal" data-d="1">
+    <!-- ===================== 31 · LO QUE SUMAMOS (papel, separado) ===================== -->
+    <section class="section section--paper program" data-chapter data-label="Lo que sumamos" data-screen-label="31 Lo que sumamos">
+      <div class="program__wrap">
+        <div class="program__head">
+          <div>
+            <p class="kicker reveal">N.º 14 — Más allá del brief</p>
+            <h2 class="display program__title reveal" data-d="1">Lo que sumamos</h2>
+          </div>
+          <p class="program__intro reveal" data-d="2">Seis extensiones que no estaban pedidas y que convierten un evento en patrimonio.</p>
+        </div>
+        <dl class="deflist reveal" data-d="2">
           <div><dt>Capítulo BA</dt><dd>Standalone del documental, postulable a <b>BAFICI y Mar del Plata.</b></dd></div>
-          <div><dt>Mini-docs</dt><dd>Por personaje, podcast visual de 10-15 min. Evergreen para 2027.</dd></div>
+          <div><dt>Mini-docs</dt><dd>Por personaje, podcast visual de 10–15 min. Evergreen para 2027.</dd></div>
           <div><dt>Archivo</dt><dd>Fílmico de la diáspora, digitalizado y donable al Museo de la Inmigración.</dd></div>
           <div><dt>Mural</dt><dd>Permanente en La Boca: un artista napolitano y uno boquense.</dd></div>
           <div><dt>Campaña UGC</dt><dd><b>Mostrame tu Nápoles</b>, abierta tres meses antes.</dd></div>
           <div><dt>EP bilingüe</dt><dd>Italiano–español, punto único de contacto con Italia.</dd></div>
-          <div><dt>Due diligence</dt><dd>Legal local sobre el cameo AI de Maradona antes de promocionarlo.</dd></div>
         </dl>
       </div>
     </section>
 
-    <!-- ===================== 13 · POR QUÉ XONA ===================== -->
-    <section class="section split" data-chapter data-label="Por qué Xona" data-parallax data-screen-label="13 Por qué Xona">
+    <!-- ===================== 32 · POR QUÉ XONA ===================== -->
+    <section class="section split" data-chapter data-label="Por qué Xona" data-parallax data-screen-label="32 Por qué Xona">
       <div class="split__media">
         <figure class="split__figure">
           <div class="media"><img class="media__img" src="images/section-13.jpg" alt="Equipo de Xona trabajando en el estudio" /></div>
@@ -287,43 +621,39 @@
         </figure>
       </div>
       <div class="split__panel">
-        <p class="split__num reveal">N.º 13</p>
+        <p class="split__num reveal">N.º 15</p>
         <h2 class="display split__title reveal" data-d="1">Por qué nosotros</h2>
         <dl class="deflist reveal" data-d="2" style="margin-top:0.4rem">
           <div><dt>Filo</dt><dd>Medio de comunicación propio. Multiplica el alcance desde adentro de la agencia.</dd></div>
           <div><dt>Boca Juniors</dt><dd>Mario Pergolini en la vicepresidencia. Charlie pasó por marketing. Acceso directo a la dirigencia.</dd></div>
           <div><dt>Bilingüe</dt><dd>Equipo italiano–español con manejo de la burocracia institucional italiana.</dd></div>
-          <div><dt>Portfolio</dt><dd style="color:var(--paper-faint);font-style:italic">[ casos concretos a seleccionar ]</dd></div>
+          <div><dt>Portfolio</dt><dd>Cientos de proyectos en toda la región. El trabajo habla solo.</dd></div>
         </dl>
       </div>
     </section>
 
-    <!-- ===================== 14 · SIGUIENTE PASO ===================== -->
-    <section class="section close" data-chapter data-label="Siguiente paso" data-parallax data-screen-label="14 Siguiente paso">
+    <!-- ===================== 33 · SIGUIENTE PASO ===================== -->
+    <section class="section close" data-chapter data-label="Hablemos" data-parallax data-screen-label="33 Siguiente paso">
       <div class="media">
-        <img class="media__img" src="images/section-14.jpg" alt="Cuaderno de notas y teléfono sobre una mesa de madera" />
+        <video class="media__img" src="videos/section-14.mp4" autoplay muted loop playsinline poster="images/section-14.jpg"></video>
       </div>
       <div class="scrim scrim--full"></div>
 
       <div class="close__inner">
-        <p class="kicker reveal">N.º 14 — Siguiente paso</p>
-        <h2 class="display close__title reveal" data-d="1">Cinco preguntas para cotizar</h2>
-        <div class="close__grid">
-          <ol class="steps reveal" data-d="2">
-            <li><span class="s">01</span> Presupuesto declarado por línea.</li>
-            <li><span class="s">02</span> Estado de las autorizaciones del cameo AI de Maradona.</li>
-            <li><span class="s">03</span> El legacy del Consulado: quién lo produce, quién lo paga.</li>
-            <li><span class="s">04</span> Las diez camisetas: ¿viajan desde Italia o se replican acá?</li>
-            <li><span class="s">05</span> Contraparte único en Italia.</li>
-          </ol>
-          <div class="timeline reveal" data-d="3">
-            <div class="t"><span>Hoy</span>Una call.</div>
-            <div class="t"><span>+10 días</span>Propuesta económica en cuatro tiers.</div>
-            <div class="t"><span>+40 días</span>Primer rodaje en La Boca.</div>
-          </div>
+        <p class="kicker reveal">N.º 16</p>
+        <h2 class="display close__title reveal" data-d="1">Hablemos.</h2>
+        <div class="copy reveal" data-d="2" style="max-width:54ch;margin-top:clamp(1.5rem,4vh,2.5rem)">
+          <p style="font-size:var(--lead-size);line-height:1.4;color:var(--paper)">Patrimonio emocional global, construido desde Buenos Aires.</p>
+          <p style="color:var(--paper-dim)">Una call. Treinta minutos. La propuesta completa.</p>
         </div>
 
-        <a class="cta reveal" data-d="3" href="mailto:fabricio@xona.com.ar?subject=Humanidad%20Compartida%20%C2%B7%20Napoli%202500">Iniciar conversación <span class="cta__arrow">→</span></a>
+        <div class="timeline reveal" data-d="2" style="margin-top:clamp(2rem,5vh,3.5rem)">
+          <div class="t"><span>Hoy</span>Una call.</div>
+          <div class="t"><span>+10 días</span>Propuesta económica en cuatro tiers.</div>
+          <div class="t"><span>+40 días</span>Primer rodaje en La Boca.</div>
+        </div>
+
+        <a class="cta reveal" data-d="3" href="mailto:fabricio@xona.com.ar?subject=Humanidad%20Compartida%20%C2%B7%20Napoli%202500">Escribinos <span class="cta__arrow">→</span></a>
 
         <div class="colophon reveal" data-d="4">
           <span>Humanidad Compartida — Napoli 2500 + 100 Anni di Azzurro</span>
